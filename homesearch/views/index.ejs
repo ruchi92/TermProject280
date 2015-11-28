@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Home Search Made Easy.!</title>
+    <% include inclusions.ejs %>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="/stylesheets/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/stylesheets/creative.css" type="text/css">
+    <link rel="stylesheet" href="/stylesheets/city_card.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--Range Sliders-->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myRange").value;
+        document.getElementById("demo").innerHTML = x * 114;
+        document.getElementById("demo1").innerHTML = x * 125;
+        document.getElementById("demo2").innerHTML = x * 12500;
+      }
+    </script>
+  </head>
+  <body  id="page-top">
+    <!--Nav Bar-->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#home"><img src="/images/HOMESEARCH.jpg" id="logo" /></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div>
+            <form class="navbar-form navbar-left" role="search">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="City, Address or Zip">
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-default" id="headersearch">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </span>
+              </div>
+            </form>
+          </div>
+          <div style="float: right">
+            <div>
+              <p> Call: (555)1234 000 &nbsp&nbsp
+                <a href = "#">Sign In </a> or <a href = "#"> Join HomeSearch</a>
+              </p>
+            </div>
+            <div style="background-color: green">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Buy & Sell</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Real Estate Agents <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Find An Agent</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tools <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">What is my home worth</a></li>
+                    <li><a href="#">Will selling pay off</a></li>
+                    <li><a href="#">Affordability Calculator</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Classes and Events</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!--Nav Bar Ends-->
+
+    <!--Header Starts-->
+    <header>
+      <div class="header-content">
+        <div class="header-content-inner">
+          <!--Put the search blocks similiar to that of edesia-->
+
+          <div class="row">
+            <br><br><br>
+            <table class="table">
+              <thead style="margin-top: 20px"><b><i>Look for Homes in the Following Areas</i></b></thead>
+              <tr class="row" style="margin: 10px; padding: 10px">
+                <td class = "background" height="300" width="390" background="/images/places/la.jpg">
+                  <p align="center" ><b><i>Los Angeles</i></b></p>
+                  <ul>
+                    <li><a href="#">Beverly Hills</a></li>
+                    <li><a href="#">Long Beach</a></li>
+                    <li><a href="#">Santa Monica</a></li>
+                    <li><a href="#">Culver City</a></li>
+                    <li><a href="#">Downtown</a></li>
+                    <li><a href="#">Venice</a></li>
+                    <li><a href="#">Marina Del Rey</a></li>
+                    <li><a href="#">Manhattan Beach</a></li>
+                  </ul>
+                </td>
+                &nbsp;
+                <td  class = "background" height="300" width="390" background="/images/places/sf.jpg">
+                  <p align = "center"><b><i>San Francisco</i></b></p>
+                  <ul>
+                    <li><a href="#">The Castro</a></li>
+                    <li><a href="#">Downtown</a></li>
+                    <li><a href="#">Nob Hill</a></li>
+                    <li><a href="#">North Beach</a></li>
+                    <li><a href="#">Marina</a></li>
+                    <li><a href="#">Inner Sunset</a></li>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Financial District</a></li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr class="row" style="margin: 10px; padding: 10px">
+                <td class = "background" height="300" width="390" background="/images/places/sd.jpg">
+                  <p align="center"><b><i>San Diego</i></b></p>
+                  <ul>
+                    <li><a href="#">Birdrock</a></li>
+                    <li><a href="#">Gaslamp</a></li>
+                    <li><a href="#">Hill Crest</a></li>
+                    <li><a href="#">La Jolla</a></li>
+                    <li><a href="#">Point Loma</a></li>
+                    <li><a href="#">North Park</a></li>
+                    <li><a href="#">Old Town</a></li>
+                    <li><a href="#">Pacific Beach</a></li>
+                  </ul>
+                </td>
+                &nbsp;<td height="300" class = "background"  width="390" background="/images/places/ny.jpg">
+                  <p align="center" ><b><i>New York</i></b></p>
+                  <ul>
+                    <li><a href="#">Brooklyn Heights</a></li>
+                    <li><a href="#">Carroll Gardens</a></li>
+                    <li><a href="#">Clinton Hills</a></li>
+                    <li><a href="#">Cobble Hills</a></li>
+                    <li><a href="#">Downtown</a></li>
+                    <li><a href="#">Park Slope</a></li>
+                    <li><a href="#">Prospect Heights</a></li>
+                    <li><a href="#">Fort Greene</a></li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--End of Header-->
+    <!--About-->
+    <section class="bg-primary" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 text-center">
+            <h2 class="section-heading">Home Search makes it all easy!</h2>
+            <hr class="light">
+            <p class="text-faded">We’re full-service, local agents who get to know you over coffee and on home tours, and we use online tools to make you smarter and faster. More than 10,000 customers buy or sell a home with us each year.</p>
+            <a href="#" class="btn btn-default btn-xl">See Story</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--See how much You can save-->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">See how much can you save using HomeSearch!</h2>
+            <hr class="primary">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <p>Save when you buy</p>
+            <svg>
+              <circle cx="150" cy="60" r="50" stroke="grey" stroke-width="2" fill="none"/>
+              Sorry ur browser doesnot support svg
+              <text x="150" y="60"
+                    font-family="sans-serif"
+                    font-size="20px"
+                    text-anchor="middle"
+                    fill="red" id="demo">5700
+              </text>
+            </svg>
+          </div>
+          <div class="col-md-6 text-center">
+            <p>Save when you sell</p>
+            <svg>
+              <circle cx="150" cy="60" r="50" stroke="grey" stroke-width="2" fill="none"/>
+              Sorry ur browser doesnot support svg
+              <text x="150" y="60"
+                    font-family="sans-serif"
+                    font-size="20px"
+                    text-anchor="middle"
+                    fill="red" id="demo1">6250
+              </text>
+            </svg>
+          </div>
+          <div class="row">
+            <div class="col-md-12 ">
+              <p style="float:left;">$200,000</p>
+              <p style="float: right">$1,250,000</p>
+              <p style="text-align: center" id="demo2">625000</p>
+              <input class = "slider" type="range" id="myRange" value="50" onchange="myFunction()" >
+              <p style="text-align:center">Adjust the slider according to house value</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12"></div>
+        </div>
+      </div>
+    </section>
+    <!--Section showing carousel for the customer reviews-->
+    <div class="img_carousel">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="../images/carousel/1.jpg" alt="First Slide">
+            <p>It's so nice to recommend a service that we know is going to be great every time!We tell all our friends :'You are going to love 'Home Search!''</p>
+          </div>
+          <div class="item">
+            <img src="../images/carousel/2.jpg" alt="Second Slide">
+            <p>We had a great experience thanks to the lack of pressure from our HomeSearch Agent. A home is a big purchase; we felt like HomeSearch really got that.</p>
+          </div>
+          <div class="item">
+            <img src= "../images/carousel/3.jpg" alt="Third Slide">
+            <p>We loved that a HomeSearch Agent could meet us to see a house whenever it worked for us. Flexibility was key since we were house-hunting with a baby.</p>
+          </div>
+          <div class="item">
+            <img src= "../images/carousel/4.jpg" alt="4th Slide">
+            <p>As first-time homebuyers, we expected negotiations and closing to be more difficult. Our HomeSearch Agent made it all so easy.</p>
+          </div>
+          <div class="item">
+            <img src= "../images/carousel/5.jpg" alt="5th Slide">
+            <p>Buying with HomeSearch was a triple win: The website was easy to use, the way we set up home tours was efficient, and we even got money back at the end.</p>
+          </div>
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+    <section class="no-padding" id="portfolio">
+      <div class="container-fluid">
+
+      </div>
+    </section>
+
+    <section class="agent">
+      <div class="container">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <h2 class="section-heading">Our Agents are always there to help!</h2>
+          <hr class="primary">
+        </div>
+        <div class="col-md-10 col-md-offset-3" align="center">
+          <form method = "post" action = "#" class="form-horizontal">
+
+            <!--User ID field-->
+            <div class="form-group">
+              <label for="name" class="control-label col-xs-2">Full Name:</label>
+              <div class="col-xs-4">
+                <input type="text" class="form-control" id="name" placeholder="Ruchi Shah" required>
+              </div>
+            </div>
+            <!--Email field-->
+            <div class="form-group">
+              <label for="email" class="control-label col-xs-2">Email Address:</label>
+              <div class="col-xs-4">
+                <input type="email" class="form-control" id="email" placeholder="ruchi.shah@sjsu.edu" required>
+              </div>
+            </div>
+            <!--Question-->
+            <div class="form-group">
+              <label for="query" class="control-label col-xs-2">Query:</label>
+              <div class="col-xs-4">
+                <textarea class="form-control" rows="5" id="query" placeholder="YOUR QUERY" required></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-lg-8">
+                <input type = "submit" value = "ASK YOUR QUERY" style="-webkit-text-fill-color: #222" class="btn btn-primary"></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 text-center">
+            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <hr class="primary">
+            <p>Homesearch surveys every customer, and posts every review online. We base our bonuses on these reviews. This makes us accountable for not just any sale, but the one that’s right for you.</p>
+          </div>
+          <div class="col-lg-4 col-lg-offset-2 text-center">
+            <i class="fa fa-phone fa-3x wow bounceIn"></i>
+            <p>123-456-6789</p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+            <p><a href="mailto:your-email@your-domain.com">feedback@homesearch.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="/javascripts/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/javascripts/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/javascripts/jquery.easing.min.js"></script>
+    <script src="/javascripts/jquery.fittext.js"></script>
+    <script src="/javascripts/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/javascripts/creative.js"></script>
+
+    <% include jsinclusions.ejs %>
+  </body>
+</html>
